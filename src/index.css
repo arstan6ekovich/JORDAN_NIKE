@@ -1,13 +1,169 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: normal;
+  background: black;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  color: white;
+  font-size: 30px;
+}
+
+.box {
+  font-size: 20px;
+}
+
+.box a:focus {
+  border-bottom: 2px solid red;
+}
+
+#Header {
+  background: rgba(0, 0, 0, 0.413);
+}
+#Details {
+  background: white;
+  height: 700px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  margin-left: 100px;
+}
+
+.btn {
+  background: white;
+  color: black;
+  padding: 10px 45px;
+  height: 60px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  width: 250px;
+  margin-top: 50px;
+  border: 2px solid black;
+}
+
+.btn1 {
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  height: 60px;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 200px;
+  font-size: 20px;
+  margin-top: 50px;
+  border: 2px solid white;
+}
+
+.basket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.basket img {
+  width: 100px;
+}
+
+.basket {
+  height: 500px;
+  overflow-y: scroll;
+  margin-top: 100px;
+}
+
+.inputm {
+  border-radius: 10px;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quwantity {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: red;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  margin-left: 200px;
+  margin-top: -50px;
+}
+
+.modal-content {
+  width: 600px;
+  height: 400px;
+  margin-left: 29%;
+  background: #ffffff6d;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  border-radius: 10px;
+  margin-top: -250px;
+}
+
+.modal-window {
+  height: 200px;
+  position: absolute;
+  margin-left: 400px;
+}
+
+.text-h1 {
+  font-size: 40px;
+  margin-left: 80px;
+  position: fixed;
+  color: white;
+  margin-top: 20px;
+}
+
+.text-btn {
+  font-size: 30px;
+  margin-left: 550px;
+  margin-top: -330px;
+}
+
+.text-h2 {
+  position: absolute;
+  text-align: center;
+  margin-left: 150px;
+  margin-top: 100px;
+  color: white;
+  font-size: 30px;
+}
+
+.button {
+  position: absolute;
+  margin-left: 180px;
+  font-size: 19px;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: rgb(00, 00, 66);
+  margin-top: 200px;
 }
